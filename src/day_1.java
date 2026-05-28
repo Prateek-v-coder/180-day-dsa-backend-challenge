@@ -127,7 +127,7 @@ public class day_1 {
             System.out.println("i got");
         }else {
             System.out.println("i do not");
-        }  */
+        }
 
         // problem 1 two sum
         int[] arr = {2, 7, 11, 15};
@@ -176,7 +176,7 @@ public class day_1 {
                 System.out.println("got the element at index "+i);
             }
         }
-
+*/
 
    }
 //    // reference variable
