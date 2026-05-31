@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class day_4 {
     public static void main(String[] args) {
-//        student s = new student();
+//        Student s = new Student();
 //        s.setAge(10);
 //        System.out.println(s.getAge());
 //        s.setAge(-10);
@@ -11,7 +11,7 @@ public class day_4 {
 //        s.setMarks(85.52f);
 //        System.out.println(s.getMarks());
 //        s.setMarks(1001.0f);
-        twoPointer pointer = new twoPointer();
+        TwoPointer pointer = new TwoPointer();
         int[] arr = {1, 3, 2, 5, 8, 4};
         int[] values = pointer.returnPayerSum(arr,6);
        // System.out.println(Arrays.toString(values));
@@ -28,7 +28,7 @@ public class day_4 {
     }
 }
 // Encapsulation
-class student{
+class Student{
     private String name;
     private int age;
     private float marks;
@@ -60,7 +60,7 @@ class student{
     }
 }
 
-class twoPointer{
+class TwoPointer{
     public int [] returnPayerSum(int[] arr,int target){
         int left = 0;
         int right = arr.length-1;
