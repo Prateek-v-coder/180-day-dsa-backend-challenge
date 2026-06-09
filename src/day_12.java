@@ -35,9 +35,9 @@ public class day_12 {
 //        head = first;
 //        System.out.println(head.data);
 //        System.out.println(head.next.next.next);
-        problems p = new problems();
-       // System.out.println(p.getSquare(19));
-        System.out.println(p.happyNumber(19));
+//        problems p = new problems();
+//       // System.out.println(p.getSquare(19));
+//        System.out.println(p.happyNumber(19));
 
     }
 }
@@ -120,45 +120,45 @@ class student{
 //        return size;
 //    }
 //}
-class node{
-    int data;
-    node next;
-    node(int data){
-        this.data=data;
-        next= null;
-    }
-}
-class problems{
-    // revision problems
-    public int singleNum(int[] nums){
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i :nums){
-            map.put(i,map.getOrDefault(i,0)+1);
-        }
-        for (HashMap.Entry<Integer,Integer> entry :map.entrySet()){
-           if (entry.getValue()==1){
-               return entry.getKey();
-           }
-        }
-        return -1;
-    }
-    public int getSquare(int n){
-        int sum =0;
-        while(n!=0){
-            int num = n%10;
-            sum +=num*num;
-            n=n/10;
-        }
-        return sum;
-    }
-    public boolean happyNumber(int n){
-        HashSet<Integer> set = new HashSet<>();
-        while(n!=1){
-            if (!set.add(n)){
-                return false;
-            }
-            n=getSquare(n);
-        }
-       return true;
-    }
-}
+//class node{
+//    int data;
+//    node next;
+//    node(int data){
+//        this.data=data;
+//        next= null;
+//    }
+//}
+//class problems{
+//    // revision problems
+//    public int singleNum(int[] nums){
+//        HashMap<Integer,Integer> map = new HashMap<>();
+//        for(int i :nums){
+//            map.put(i,map.getOrDefault(i,0)+1);
+//        }
+//        for (HashMap.Entry<Integer,Integer> entry :map.entrySet()){
+//           if (entry.getValue()==1){
+//               return entry.getKey();
+//           }
+//        }
+//        return -1;
+//    }
+//    public int getSquare(int n){
+//        int sum =0;
+//        while(n!=0){
+//            int num = n%10;
+//            sum +=num*num;
+//            n=n/10;
+//        }
+//        return sum;
+//    }
+//    public boolean happyNumber(int n){
+//        HashSet<Integer> set = new HashSet<>();
+//        while(n!=1){
+//            if (!set.add(n)){
+//                return false;
+//            }
+//            n=getSquare(n);
+//        }
+//       return true;
+//    }
+//}
