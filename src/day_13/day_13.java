@@ -39,7 +39,7 @@ class node{
 }
 class LL{
     private int size=0;
-   private node head;
+    node head;
    private node tail;
     public void addFirst(int value){
         node newnode = new node(value);
