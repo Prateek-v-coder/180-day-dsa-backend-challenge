@@ -12,7 +12,7 @@ public class day_5 {
 //       // puppy.make_sound();
 //        puppy.skin_color();
         Sliding_window window = new Sliding_window();
-        int[] arr = {1,10,25,40,8,65,86};
+        int[] arr = {0,0,0,0};
         String str = "abcabcbb";
         //System.out.println(window.maxSumSubArray(arr,3));
         //System.out.println(Arrays.toString(window.avgSubArray(arr,3)));
@@ -20,8 +20,9 @@ public class day_5 {
        // System.out.println(window.maximumOnc(arr,2));
         //System.out.println(window.longestSubstring(str));
         //System.out.println(Arrays.toString(window.findSum(arr,6)));
-//        System.out.println(window.findSunArraySum(arr,16));
-        System.out.println(window.secondMin(arr));
+     //   System.out.println(window.findSunArraySum(arr,0));
+       // System.out.println(window.secondMin(arr));
+        window.threeSum(arr,0);
     }
 }
 
