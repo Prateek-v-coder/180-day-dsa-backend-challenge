@@ -1,0 +1,39 @@
+create database library;
+use library;
+create table book(
+id int primary key AUTO_INCREMENT,
+title varchar(30),
+author varchar(30),
+price double
+);
+insert into book
+values
+(null,'java','prateek',1500.00),
+(null,'python','vikash',2000.0);
+insert into book value (null,'mySQL','ratnesh',2500.0);
+INSERT INTO book
+(id,title, author, price)
+VALUES
+(null,'Java', 'Prateek', 1500),
+(null,'Python', 'Vikash', 2000),
+(null,'MySQL', 'Ratnesh', 2500),
+(null,'DSA', 'Aman', 1800),
+(null,'Spring Boot', 'Rahul', 3000);
+delete from book where id=1;
+delete from book where id=2;
+delete from book where id=3;
+select * from book;
+select * from book where price>2000;
+select count(title) from book;
+select * from book limit 2;
+select price from book order by price asc;
+select * from book order by price desc limit 1;
+select AVG(price) from book;
+update book set price = 1800 where author='prateek';
+select * from book;
+delete from book order by price asc limit 1;
+select * from book;
+
+
+
+
