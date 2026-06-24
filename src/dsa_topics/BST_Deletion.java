@@ -17,6 +17,7 @@ public class BST_Deletion {
 
     }
     public static TreeNode delete(TreeNode root,int value){
+        if (root==null) return null;
         if(root.data>value){
           root.left = delete(root.left,value);
         }
@@ -34,8 +35,7 @@ public class BST_Deletion {
         return root;
     }
     public static TreeNode successor(TreeNode root){
-        if (root==null) return null;
-        root.left=  successor(root.left);
-        return root;
+        if (root.left==null) return root;
+        return root.left;
     }
 }
