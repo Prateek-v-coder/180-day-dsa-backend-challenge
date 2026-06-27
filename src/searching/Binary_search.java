@@ -53,6 +53,7 @@ public class Binary_search {
         while (str<=end){
             int mid  = str +(end-str)/2;
             if (arr[mid]==target){
+
                 ans=mid;
                 str = mid+1;
             } else if (arr[mid]<target) {
