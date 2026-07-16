@@ -53,11 +53,12 @@ public class day_37_connected_component {
             }
         }
     }
-    public static boolean DFS_Cycle_Detection(List<List<Integer>> graph,int curr,boolean[] visited,int parent){
+    public static boolean DFS_Cycle_Detection(List<List<Integer>> graph, int curr,boolean[] visited, int parent)
+    {
         visited[curr] = true;
         for(int i :graph.get(curr)){
             if(!visited[i]){
-                if(DFS_Cycle_Detection(graph,i,visited,parent)) return true;
+                if(DFS_Cycle_Detection(graph,i,visited,curr)) return true;
             } else if (i!=parent) {
                 return true;
             }
