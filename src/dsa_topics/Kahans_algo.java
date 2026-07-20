@@ -32,7 +32,7 @@ public class Kahans_algo {
         }
 
         int idx = 0;
-        while (queue.size() > 0) {
+        while (!queue.isEmpty()) {
             int curr = queue.poll();
             result[idx++] = curr;
             for (int i : graph.get(curr)) {

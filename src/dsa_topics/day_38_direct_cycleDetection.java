@@ -7,7 +7,7 @@ import java.util.Stack;
 public class day_38_direct_cycleDetection {
     public static void main(String[] args) {
         List<List<Integer>> graph = new ArrayList<>();
-        int V = 6;
+        int V = 2;
         createGraph(graph,V);
         //System.out.println(hasCycle(graph,V,new boolean[V],new boolean[V]));
     }
