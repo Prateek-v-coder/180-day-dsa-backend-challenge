@@ -1,4 +1,4 @@
-package Model;
+package com.prateek.Model;
 
 public class IssuedBook {
 }
