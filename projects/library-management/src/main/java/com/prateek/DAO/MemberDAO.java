@@ -1,4 +1,4 @@
-package com.prateek.dao;
+package com.prateek.DAO;
 
 public class MemberDAO {
 }
