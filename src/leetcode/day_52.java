@@ -4,8 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.HashMap;
 
-public class day_52 {public int solve(List<List<int[]>> graph, int V, int src){
+public class day_52 {
+    public int solve(List<List<int[]>> graph, int V, int src){
     PriorityQueue<int[]> pq = new PriorityQueue<>((a, b)->a[1]-b[1]);
     int[] dist = new int[V+1];
     Arrays.fill(dist,Integer.MAX_VALUE);
